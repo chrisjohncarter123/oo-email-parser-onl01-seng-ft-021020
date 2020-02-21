@@ -26,7 +26,7 @@ class EmailAddressParser
       end
     end
 
-    @result
+    result
   end
 end
 e = EmailAddressParser.new("john@doe.com person@somewhere.org")

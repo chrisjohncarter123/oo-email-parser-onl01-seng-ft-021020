@@ -23,6 +23,6 @@ class EmailAddressParser
     @emails
   end
 end
-e = EmailAddressParser.new("john@doe.com,person@somewhere.org")
+e = EmailAddressParser.new("john@doe.com person@somewhere.org")
 
 puts e.parse

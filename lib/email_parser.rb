@@ -15,9 +15,7 @@ class EmailAddressParser
     splitters = [",", " ", " ,"]
     
     splitters.each do |s|
-      @emails.each do |e|
-        @emails = @emails.split(s)
-      end
+      @emails = @emails.split(s)
     end
     
   end

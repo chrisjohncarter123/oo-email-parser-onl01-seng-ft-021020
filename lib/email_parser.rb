@@ -20,9 +20,7 @@ class EmailAddressParser
     
     @emails = @emails.split(",")
     @emails = @emails.split(", ")
-    @emails.each do |e|
-      
-    end
+
     @emails
   end
 end

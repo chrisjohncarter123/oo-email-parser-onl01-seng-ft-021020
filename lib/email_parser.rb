@@ -21,4 +21,6 @@ class EmailAddressParser
     puts @emails
   end
 end
-e = EmailAddressParser.new()
+e = EmailAddressParser.new("john@doe.com, person@somewhere.org")
+
+puts 

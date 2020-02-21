@@ -18,7 +18,8 @@ class EmailAddressParser
      # @emails = @emails.split(s)
     end
     
-    puts @emails.split(",")
+    @emails = @emails.split(",")
+    @emails
   end
 end
 e = EmailAddressParser.new("john@doe.com, person@somewhere.org")

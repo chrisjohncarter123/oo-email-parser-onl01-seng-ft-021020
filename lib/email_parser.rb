@@ -12,11 +12,6 @@ class EmailAddressParser
   
   def parse
     
-    splitters = [",", " ", " ,"]
-    
-    splitters.each do |s|
-     # @emails = @emails.split(s)
-    end
     
     regex = @emails.split(%r{(,\s+|\s+|\s|,)})
     result = []
@@ -29,6 +24,3 @@ class EmailAddressParser
     result
   end
 end
-e = EmailAddressParser.new("john@doe.com person@somewhere.org")
-
-puts e.parse

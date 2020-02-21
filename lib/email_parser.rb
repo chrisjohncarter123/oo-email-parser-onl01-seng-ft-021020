@@ -18,7 +18,13 @@ class EmailAddressParser
      # @emails = @emails.split(s)
     end
     
-    @emails = @emails.split(%r{(,\s+|\s+|\s|,)})
+    regex = @emails.split(%r{(,\s+|\s+|\s|,)})
+    result = []
+    regex.each do |r|
+      if(result.include?(r) == false)
+        result << r
+      end
+    end
 
     @emails
   end

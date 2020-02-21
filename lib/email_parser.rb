@@ -18,5 +18,7 @@ class EmailAddressParser
       @emails = @emails.split(s)
     end
     
+    puts @emails
   end
 end
+e = EmailAddressParser.new()

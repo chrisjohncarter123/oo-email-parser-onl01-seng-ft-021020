@@ -18,7 +18,7 @@ class EmailAddressParser
      # @emails = @emails.split(s)
     end
     
-    @emails = @emails.split(%r{,\s*})
+    @emails = @emails.split(%r{,?\s*})
 
     @emails
   end

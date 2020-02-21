@@ -12,13 +12,13 @@ class EmailAddressParser
   
   def parse
     
-    if(@emails.include?(", "))
-      @emails = @emails.split(", ")
-    else
-      @emails = @emails.split(" ")
+    splitters = [",", " ", " ,"]
+    
+    splitters.each do |s|
+      @emails.each do |e|
+        @emails = @emails.split(s)
+      end
     end
-    @emails
-    #@emails = @emails.split(" ")
     
   end
 end

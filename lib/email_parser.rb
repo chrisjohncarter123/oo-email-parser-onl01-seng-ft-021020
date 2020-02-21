@@ -21,7 +21,7 @@ class EmailAddressParser
     regex = @emails.split(%r{(,\s+|\s+|\s|,)})
     result = []
     regex.each do |r|
-      if(result.include?(r) == false)
+      if(result.include?(r) == false && r.split("").include?("@"))
         result << r
       end
     end
